@@ -2,6 +2,16 @@
 # yarn lockfile v1
 
 
+ansi-escapes@^3.2.0:
+  version "3.2.0"
+  resolved "http://sh.xiaoxiangyoupin.cn:4873/ansi-escapes/-/ansi-escapes-3.2.0.tgz#8780b98ff9dbf5638152d1f1fe5c1d7b4442976b"
+  integrity sha1-h4C5j/nb9WOBUtHx/lwde0RCl2s=
+
+ansi-regex@^3.0.0:
+  version "3.0.0"
+  resolved "http://sh.xiaoxiangyoupin.cn:4873/ansi-regex/-/ansi-regex-3.0.0.tgz#ed0317c322064f79466c02966bddb605ab37d998"
+  integrity sha1-7QMXwyIGT3lGbAKWa922Bas32Zg=
+
 ansi-regex@^4.1.0:
   version "4.1.0"
   resolved "http://sh.xiaoxiangyoupin.cn:4873/ansi-regex/-/ansi-regex-4.1.0.tgz#8b9f8f08cf1acb843756a839ca8c7e3168c51997"
@@ -23,6 +33,11 @@ chalk@^2.0.1, chalk@^2.4.2:
     escape-string-regexp "^1.0.5"
     supports-color "^5.3.0"
 
+chardet@^0.7.0:
+  version "0.7.0"
+  resolved "http://sh.xiaoxiangyoupin.cn:4873/chardet/-/chardet-0.7.0.tgz#90094849f0937f2eedc2425d0d28a9e5f0cbad9e"
+  integrity sha1-kAlISfCTfy7twkJdDSip5fDLrZ4=
+
 cli-cursor@^2.1.0:
   version "2.1.0"
   resolved "http://sh.xiaoxiangyoupin.cn:4873/cli-cursor/-/cli-cursor-2.1.0.tgz#b35dac376479facc3e94747d41d0d0f5238ffcb5"
@@ -34,6 +49,11 @@ cli-spinners@^2.0.0:
   version "2.1.0"
   resolved "http://sh.xiaoxiangyoupin.cn:4873/cli-spinners/-/cli-spinners-2.1.0.tgz#22c34b4d51f573240885b201efda4e4ec9fff3c7"
   integrity sha1-IsNLTVH1cyQIhbIB79pOTsn/88c=
+
+cli-width@^2.0.0:
+  version "2.2.0"
+  resolved "http://sh.xiaoxiangyoupin.cn:4873/cli-width/-/cli-width-2.2.0.tgz#ff19ede8a9a5e579324147b0c11f0fbcbabed639"
+  integrity sha1-/xnt6Kml5XkyQUewwR8PvLq+1jk=
 
 clone@^1.0.2:
   version "1.0.4"
@@ -69,10 +89,67 @@ escape-string-regexp@^1.0.5:
   resolved "http://sh.xiaoxiangyoupin.cn:4873/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
   integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
 
+external-editor@^3.0.3:
+  version "3.0.3"
+  resolved "http://sh.xiaoxiangyoupin.cn:4873/external-editor/-/external-editor-3.0.3.tgz#5866db29a97826dbe4bf3afd24070ead9ea43a27"
+  integrity sha1-WGbbKal4Jtvkvzr9JAcOrZ6kOic=
+  dependencies:
+    chardet "^0.7.0"
+    iconv-lite "^0.4.24"
+    tmp "^0.0.33"
+
+figures@^2.0.0:
+  version "2.0.0"
+  resolved "http://sh.xiaoxiangyoupin.cn:4873/figures/-/figures-2.0.0.tgz#3ab1a2d2a62c8bfb431a0c94cb797a2fce27c962"
+  integrity sha1-OrGi0qYsi/tDGgyUy3l6L84nyWI=
+  dependencies:
+    escape-string-regexp "^1.0.5"
+
 has-flag@^3.0.0:
   version "3.0.0"
   resolved "http://sh.xiaoxiangyoupin.cn:4873/has-flag/-/has-flag-3.0.0.tgz#b5d454dc2199ae225699f3467e5a07f3b955bafd"
   integrity sha1-tdRU3CGZriJWmfNGfloH87lVuv0=
+
+iconv-lite@^0.4.24:
+  version "0.4.24"
+  resolved "http://sh.xiaoxiangyoupin.cn:4873/iconv-lite/-/iconv-lite-0.4.24.tgz#2022b4b25fbddc21d2f524974a474aafe733908b"
+  integrity sha1-ICK0sl+93CHS9SSXSkdKr+czkIs=
+  dependencies:
+    safer-buffer ">= 2.1.2 < 3"
+
+inquirer@^6.3.1:
+  version "6.3.1"
+  resolved "http://sh.xiaoxiangyoupin.cn:4873/inquirer/-/inquirer-6.3.1.tgz#7a413b5e7950811013a3db491c61d1f3b776e8e7"
+  integrity sha1-ekE7XnlQgRATo9tJHGHR87d26Oc=
+  dependencies:
+    ansi-escapes "^3.2.0"
+    chalk "^2.4.2"
+    cli-cursor "^2.1.0"
+    cli-width "^2.0.0"
+    external-editor "^3.0.3"
+    figures "^2.0.0"
+    lodash "^4.17.11"
+    mute-stream "0.0.7"
+    run-async "^2.2.0"
+    rxjs "^6.4.0"
+    string-width "^2.1.0"
+    strip-ansi "^5.1.0"
+    through "^2.3.6"
+
+is-fullwidth-code-point@^2.0.0:
+  version "2.0.0"
+  resolved "http://sh.xiaoxiangyoupin.cn:4873/is-fullwidth-code-point/-/is-fullwidth-code-point-2.0.0.tgz#a3b30a5c4f199183167aaab93beefae3ddfb654f"
+  integrity sha1-o7MKXE8ZkYMWeqq5O+764937ZU8=
+
+is-promise@^2.1.0:
+  version "2.1.0"
+  resolved "http://sh.xiaoxiangyoupin.cn:4873/is-promise/-/is-promise-2.1.0.tgz#79a2a9ece7f096e80f36d2b2f3bc16c1ff4bf3fa"
+  integrity sha1-eaKp7OfwlugPNtKy87wWwf9L8/o=
+
+lodash@^4.17.11:
+  version "4.17.11"
+  resolved "http://sh.xiaoxiangyoupin.cn:4873/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
+  integrity sha1-s56mIp72B+zYniyN8SU2iRysm40=
 
 log-symbols@^2.2.0:
   version "2.2.0"
@@ -85,6 +162,11 @@ mimic-fn@^1.0.0:
   version "1.2.0"
   resolved "http://sh.xiaoxiangyoupin.cn:4873/mimic-fn/-/mimic-fn-1.2.0.tgz#820c86a39334640e99516928bd03fca88057d022"
   integrity sha1-ggyGo5M0ZA6ZUWkovQP8qIBX0CI=
+
+mute-stream@0.0.7:
+  version "0.0.7"
+  resolved "http://sh.xiaoxiangyoupin.cn:4873/mute-stream/-/mute-stream-0.0.7.tgz#3075ce93bc21b8fab43e1bc4da7e8115ed1e7bab"
+  integrity sha1-MHXOk7whuPq0PhvE2n6BFe0ee6s=
 
 onetime@^2.0.0:
   version "2.0.1"
@@ -105,6 +187,11 @@ ora@^3.4.0:
     strip-ansi "^5.2.0"
     wcwidth "^1.0.1"
 
+os-tmpdir@~1.0.2:
+  version "1.0.2"
+  resolved "http://sh.xiaoxiangyoupin.cn:4873/os-tmpdir/-/os-tmpdir-1.0.2.tgz#bbe67406c79aa85c5cfec766fe5734555dfa1274"
+  integrity sha1-u+Z0BseaqFxc/sdm/lc0VV36EnQ=
+
 restore-cursor@^2.0.0:
   version "2.0.0"
   resolved "http://sh.xiaoxiangyoupin.cn:4873/restore-cursor/-/restore-cursor-2.0.0.tgz#9f7ee287f82fd326d4fd162923d62129eee0dfaf"
@@ -113,12 +200,46 @@ restore-cursor@^2.0.0:
     onetime "^2.0.0"
     signal-exit "^3.0.2"
 
+run-async@^2.2.0:
+  version "2.3.0"
+  resolved "http://sh.xiaoxiangyoupin.cn:4873/run-async/-/run-async-2.3.0.tgz#0371ab4ae0bdd720d4166d7dfda64ff7a445a6c0"
+  integrity sha1-A3GrSuC91yDUFm19/aZP96RFpsA=
+  dependencies:
+    is-promise "^2.1.0"
+
+rxjs@^6.4.0:
+  version "6.5.2"
+  resolved "http://sh.xiaoxiangyoupin.cn:4873/rxjs/-/rxjs-6.5.2.tgz#2e35ce815cd46d84d02a209fb4e5921e051dbec7"
+  integrity sha1-LjXOgVzUbYTQKiCftOWSHgUdvsc=
+  dependencies:
+    tslib "^1.9.0"
+
+"safer-buffer@>= 2.1.2 < 3":
+  version "2.1.2"
+  resolved "http://sh.xiaoxiangyoupin.cn:4873/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
+  integrity sha1-RPoWGwGHuVSd2Eu5GAL5vYOFzWo=
+
 signal-exit@^3.0.2:
   version "3.0.2"
   resolved "http://sh.xiaoxiangyoupin.cn:4873/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
   integrity sha1-tf3AjxKH6hF4Yo5BXiUTK3NkbG0=
 
-strip-ansi@^5.2.0:
+string-width@^2.1.0:
+  version "2.1.1"
+  resolved "http://sh.xiaoxiangyoupin.cn:4873/string-width/-/string-width-2.1.1.tgz#ab93f27a8dc13d28cac815c462143a6d9012ae9e"
+  integrity sha1-q5Pyeo3BPSjKyBXEYhQ6bZASrp4=
+  dependencies:
+    is-fullwidth-code-point "^2.0.0"
+    strip-ansi "^4.0.0"
+
+strip-ansi@^4.0.0:
+  version "4.0.0"
+  resolved "http://sh.xiaoxiangyoupin.cn:4873/strip-ansi/-/strip-ansi-4.0.0.tgz#a8479022eb1ac368a871389b635262c505ee368f"
+  integrity sha1-qEeQIusaw2iocTibY1JixQXuNo8=
+  dependencies:
+    ansi-regex "^3.0.0"
+
+strip-ansi@^5.1.0, strip-ansi@^5.2.0:
   version "5.2.0"
   resolved "http://sh.xiaoxiangyoupin.cn:4873/strip-ansi/-/strip-ansi-5.2.0.tgz#8c9a536feb6afc962bdfa5b104a5091c1ad9c0ae"
   integrity sha1-jJpTb+tq/JYr36WxBKUJHBrZwK4=
@@ -131,6 +252,23 @@ supports-color@^5.3.0:
   integrity sha1-4uaaRKyHcveKHsCzW2id9lMO/I8=
   dependencies:
     has-flag "^3.0.0"
+
+through@^2.3.6:
+  version "2.3.8"
+  resolved "http://sh.xiaoxiangyoupin.cn:4873/through/-/through-2.3.8.tgz#0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5"
+  integrity sha1-DdTJ/6q8NXlgsbckEV1+Doai4fU=
+
+tmp@^0.0.33:
+  version "0.0.33"
+  resolved "http://sh.xiaoxiangyoupin.cn:4873/tmp/-/tmp-0.0.33.tgz#6d34335889768d21b2bcda0aa277ced3b1bfadf9"
+  integrity sha1-bTQzWIl2jSGyvNoKonfO07G/rfk=
+  dependencies:
+    os-tmpdir "~1.0.2"
+
+tslib@^1.9.0:
+  version "1.9.3"
+  resolved "http://sh.xiaoxiangyoupin.cn:4873/tslib/-/tslib-1.9.3.tgz#d7e4dd79245d85428c4d7e4822a79917954ca286"
+  integrity sha1-1+TdeSRdhUKMTX5IIqeZF5VMooY=
 
 wcwidth@^1.0.1:
   version "1.0.1"

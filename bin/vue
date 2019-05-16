@@ -1,9 +1,0 @@
-#! /usr/bin/env node
-
-require('commander')
-    .version(require('../package').version, '-v, --version')
-    .description(require('../package').description)
-    .usage('<command> [options]')
-    .command('generate', 'generate one new vue component file')
-    .alias('g')
-    .parse(process.argv)
