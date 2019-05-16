@@ -1,0 +1,22 @@
+{
+  "name": "vue-generate-file",
+  "version": "0.0.1",
+  "description": "一个创建路由,api,组件,页面相关文件的插件",
+  "author": "henry_wang",
+  "license": "MIT",
+  "bin": {
+    "vue-g": "bin/vue"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leo-wj910729/vue-generate-file.git"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "commander": "^2.20.0",
+    "ora": "^3.4.0"
+  }
+}
